@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/btn_dialog"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog"/>
+    
+    <com.lee.sdk.test.widget.TosScrollView
+        android:id="@+id/scrollview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:fadeScrollbars="true"
+        android:scrollbarThumbVertical="@drawable/sdk_scroll_bar_thumb"
+        android:scrollbarTrackVertical="@drawable/conf_scroll_base">
+        
+    </com.lee.sdk.test.widget.TosScrollView>
+
+</LinearLayout>

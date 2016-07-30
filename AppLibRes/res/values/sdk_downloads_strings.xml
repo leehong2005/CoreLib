@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- for download -->
+    <string name="download_no_sdcard_dlg_title">"无 SD 卡"</string>
+    <string name="download_sdcard_busy_dlg_title">"SD 卡不可用"</string>
+    <string name="download_no_application_title">"无法打开文件"</string>
+    <string name="download_begin">"开始下载"</string>
+    <string name="notification_need_wifi_for_size">"此大小的文件需要通过 Wi-Fi 下载"</string>
+    <string name="notification_download_complete">"下载完成"</string>
+    <string name="notification_download_failed">"下载失败"</string>
+    <string name="download_unknown_title">"&lt;未命名&gt;"</string>
+    <string name="download_noenough_space">你的存储空间不足</string>
+    <string name="download_incache_toast">"未检测到SD卡，文件将下载到手机内存"</string>
+    <string name="download_externel_nospace">SD卡空间不足，文件将下载到手机内存"</string>
+    <string name="button_queue_for_wifi">"排队"</string>
+    <string name="wifi_required_title">"文件太大，不适于通过移动网络下载"</string>
+    <string name="wifi_required_body">"你不能从该移动网络下载一个大小为%1$s的文件。下次连接到 Wi-Fi 网络时，可触摸%1$s下载此文件。"</string>
+    <string name="wifi_recommended_title">"加入 Wi-Fi 下载队列？"</string>
+    <string name="wifi_recommended_body">"从该移动网络下载这个大小为 %1$s的文件可能会耗尽电池电量，还要向运营商支付额外的费用。下次连接到 Wi-Fi 网络时，可触摸%2$s下载此文件。"</string>
+    <string name="button_cancel_download">"取消"</string>
+    <string name="button_start_now">"立即开始"</string>
+    <string name="dialog_media_not_found">"无法下载，未安装外部媒体"</string>
+    <string name="dialog_insufficient_space_on_external">"无法完成下载，存储空间不足"</string>
+
+</resources>

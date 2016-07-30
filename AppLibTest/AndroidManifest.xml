@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lee.sdk.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+      
+    <application
+        android:name="com.lee.sdk.test.app.CoreLibApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Used for install referral measurement -->
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+
+        <receiver
+            android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.lee.sdk.test.CoreLibTestMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lee.sdk.test.CacheTestActivity"
+            android:label="@string/title_test_cache" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Task -->
+        <activity
+            android:name=".task.TaskManagerActivity"
+            android:label="@string/title_test_task" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.ShowProgressDlgActivity"
+            android:label="@string/title_task_show_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.TASKMANAGER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.UpdateProgressDlgActivity"
+            android:label="@string/title_task_update_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.TASKMANAGER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.InteractWithUIActivity"
+            android:label="@string/title_task_interact_with_ui" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.TASKMANAGER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.InteractWithUIActivity2"
+            android:label="@string/title_task_interact_with_ui2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.TASKMANAGER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".task.NestedTaskManagerActivity"
+            android:label="@string/title_task_task_manager_nested" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.TASKMANAGER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Animation -->
+        <activity
+            android:name=".anim.AnimationActivity"
+            android:label="@string/title_animation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.InhaleAnimationActivity"
+            android:label="@string/title_anim_inhale" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANIMATION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.Rotate3dAnimActivity"
+            android:label="@string/title_anim_3d" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANIMATION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.CycleAnimationActivity"
+            android:label="@string/title_anim_cycle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANIMATION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.BounceAnimationActivity"
+            android:label="@string/title_anim_bounce" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANIMATION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".anim.FlipAnimationActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_anim_flip" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANIMATION" />
+            </intent-filter>
+        </activity>
+
+        <!-- Gallery -->
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:label="@string/title_gallery" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gallery.GalleryFlowActivity"
+            android:label="@string/title_gallery_flow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.GALLERY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gallery.GalleryCycleActivity"
+            android:label="@string/title_gallery_cycle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.GALLERY" />
+            </intent-filter>
+        </activity>
+
+        <!-- Wheel View -->
+        <activity
+            android:name=".wheel.WheelViewActivity"
+            android:label="@string/title_wheel_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.WheelViewDateActivity"
+            android:label="@string/title_wheel_view_date" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.WHEEL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.WheelViewTimeActivity"
+            android:label="@string/title_wheel_view_time" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.WHEEL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wheel.WheelViewPasswordActivity"
+            android:label="@string/title_wheel_view_password" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.WHEEL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".group.GroupGridViewActivity"
+            android:label="@string/title_group_grid_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.nj1s.lib.test.incom.lee.sdk.test.dragdrop.DragDropActivity" />
+            </intent-filter>
+        </activity>
+
+        <!-- Drag drop -->
+        <activity
+            android:name=".dragdrop.DragDropActivity"
+            android:label="@string/title_drag_drop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dragdrop.GridViewDragActivity"
+            android:label="@string/title_drag_drop_gridview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.DRAGDROP" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dragdrop.ListViewDragActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_drag_drop_listview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.nj1s.lib.test.intent.category.DRAGDROP" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.lee.sdk.test.CaptureActivity" 
+            android:label="@string/title_capture">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".scrollbar.ScrollBarActivity"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".scrollbar.ScrollViewBarActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.nj1s.lib.test.intent.category.SCROLLBAR" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".scrollbar.ListViewBarActivity"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.nj1s.lib.test.intent.category.SCROLLBAR" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pullrefresh.PullRefreshActivity"
+            android:label="@string/title_pull_to_refresh" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pullrefresh.PullRefreshListViewActivity"
+            android:label="@string/title_pull_to_refresh_listview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.PULLREFRESH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pullrefresh.PullRefreshWebViewActivity"
+            android:label="@string/title_pull_to_refresh_webview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.PULLREFRESH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pullrefresh.PullRefreshScrollViewActivity"
+            android:label="@string/title_pull_to_refresh_scrollview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.PULLREFRESH" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Section List View -->
+        <activity
+            android:name=".section.SectionListView"
+            android:label="@string/title_section_listview" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        
+        <!-- ViewPager -->
+        <activity
+            android:name="com.lee.sdk.test.ViewPagerActivity"
+            android:label="@string/title_view_pager" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.lee.sdk.test.ImageBrowserActivity"
+            android:label="@string/title_image_viewer" >
+        </activity>
+        
+        <activity
+            android:name="com.lee.sdk.test.staggered.ImageAlbumActivity"
+            android:label="@string/title_staggered_images" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.lee.sdk.test.intent.category.ANDROIDDEMO" />
+            </intent-filter>            
+        </activity>
+    </application>
+
+</manifest>

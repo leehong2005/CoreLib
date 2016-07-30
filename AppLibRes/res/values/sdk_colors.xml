@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="picture_loading_text_color">#999999</color>
+    <color name="menu_item_bg_pressed_color">#0c000000</color>
+
+    <drawable name="titlebar_click_background">#4C000000</drawable>
+    <drawable name="null_drawable">#00ffffff</drawable>
+    <drawable name="telephone_search_selector_cancel_pressed">#e2e2e2</drawable>
+    <drawable name="telephone_search_selector_cancel_normal">#f5f5f5</drawable>
+
+    <color name="white">#ffffffff</color>
+    <color name="dialog_text">#222222</color>
+    <color name="dialog_blue_line">#308EF0</color>
+    <color name="dialog_gray_line">#333333</color>
+    <color name="dialog_content">#222222</color>
+    <color name="dialog_gray">#e0e0e0</color>
+</resources>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PictureListViewActivity" >
+
+    <LinearLayout 
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_load_data"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Load Data"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_list_pull"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="ListView Pull"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar">
+        
+    </FrameLayout>
+
+</RelativeLayout>

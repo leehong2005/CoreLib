@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<!-- Preference styles -->
+    <style name="preference_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/sdk_preference_text_color_title</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="plugin_preference_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/sdk_preference_text_color_title</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="preference_subtext">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/sdk_preference_text_color_subtext</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="preference_subtitle" parent="preference_subtext">
+        <item name="android:maxWidth">156dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="preference_summary" parent="preference_subtext">
+        <item name="android:maxLines">4</item>
+    </style>
+    <style name="plugin_preference_summary" parent="preference_subtext">
+        <item name="android:maxLines">4</item>
+    </style>
+    <style name="preference_icon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">9dip</item>
+        <item name="android:layout_marginBottom">9dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="plugin_preference_icon">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginRight">9dip</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="plugin_preference_option">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginRight">16dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="preference_category">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">0dip</item>
+    </style>
+    <style name="plugin_preference_category">
+        <item name="android:background">#f5f5f5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">13dip</item>
+        <item name="android:paddingBottom">13dip</item>
+        <item name="android:paddingLeft">14dp</item>
+    </style>    
+    <style name="text_preference">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13.3sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:shadowColor">@android:color/white</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:paddingTop">10.6dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+    </style>
+</resources>

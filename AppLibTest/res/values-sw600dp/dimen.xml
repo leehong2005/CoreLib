@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flip_grid_item_size">180dp</dimen>
+    <dimen name="flip_grid_dialog_size">500dp</dimen>
+    <dimen name="gallery_item_size">100dp</dimen>
+    <dimen name="gallery_flow_item_width">110dp</dimen>
+    <dimen name="gallery_flow_item_height">184dp</dimen>
+</resources>

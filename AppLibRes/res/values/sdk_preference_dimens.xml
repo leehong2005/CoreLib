@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Preference values -->
+    <dimen name="preference_single_bottom_margin">10dip</dimen>
+    <dimen name="preference_item_min_height">48dip</dimen>
+    <dimen name="preference_item_min_height_with_summary">54dip</dimen>
+    <dimen name="single_choice_preference_item_width">70dip</dimen>
+    <dimen name="single_choice_preference_item_height">28dip</dimen>
+    
+</resources>

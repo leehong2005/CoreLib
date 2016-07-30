@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="vpiDrawablePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+    
+     <declare-styleable name="DrawablePageIndicator">
+        <!-- View background -->
+        <attr name="android:background"/>
+        <!-- drawable page indicator -->
+        <attr name="android:src"/>
+        <attr name="shadow_left" format="dimension" />
+        <attr name="shadow_right" format="dimension" />
+        <!-- drawable page indicator -->
+        <attr name="vpi_height" format="dimension" />
+    </declare-styleable>
+
+    <!-- Controls the initial visibility of the view.  -->
+    <attr name="rightTxtZone1Visibility">
+        <!-- Visible on screen; the default value. -->
+        <enum name="gone" value="0" />
+        <!-- Not displayed, but taken into account during layout (space is left for it). -->
+        <enum name="visible" value="1" />
+        <!-- Completely hidden, as if the view had not been added. -->
+        <enum name="invisible" value="2" />
+    </attr>
+        
+    <attr name="rightZonesVisibility">
+        <!-- Visible on screen; the default value. -->
+        <enum name="gone" value="0" />
+        <!-- Not displayed, but taken into account during layout (space is left for it). -->
+        <enum name="visible" value="1" />
+        <!-- Completely hidden, as if the view had not been added. -->
+        <enum name="invisible" value="2" />
+    </attr>
+    
+    <attr name="rightImgZone1Visibility">
+        <!-- Visible on screen; the default value. -->
+        <enum name="gone" value="0" />
+        <!-- Not displayed, but taken into account during layout (space is left for it). -->
+        <enum name="visible" value="1" />
+        <!-- Completely hidden, as if the view had not been added. -->
+        <enum name="invisible" value="2" />
+    </attr>
+    
+    <attr name="rightImgZone2Visibility">
+        <!-- Visible on screen; the default value. -->
+        <enum name="gone" value="0" />
+        <!-- Not displayed, but taken into account during layout (space is left for it). -->
+        <enum name="visible" value="1" />
+        <!-- Completely hidden, as if the view had not been added. -->
+        <enum name="invisible" value="2" />
+    </attr>
+    
+    <attr name="titleAlignment">
+        <!--标题文字居左. -->
+        <enum name="lfet" value="0" />
+        <!-- 标题文字居中 -->
+        <enum name="center" value="1" />
+        <!-- 标题文字居右 -->
+        <enum name="right" value="2" />
+    </attr>
+        
+    <!-- 通用标题栏 -->
+    <declare-styleable name="BdActionBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="reference|color" />
+        <attr name="titleTxtShadowRadius" format="float" />
+        <attr name="titleTxtShadowDx" format="float" />
+        <attr name="titleTxtShadowDy" format="float" />
+        <attr name="titleTxtShadowColor" format="reference|color" />
+        <attr name="rightTxtZone1Text" format="string" />
+        <attr name="rightZonesVisibility" />
+        <attr name="rightTxtZone1Visibility" />
+        <attr name="rightTxtZone1TxtColor" format="reference|color" />
+        <attr name="rightTxtZone1TxtSize" format="dimension" />
+        <attr name="rightTxtZone1TxtShadowRadius" format="float" />
+        <attr name="rightTxtZone1TxtShadowDx" format="float" />
+        <attr name="rightTxtZone1TxtShadowDy" format="float" />
+        <attr name="rightTxtZone1TxtShadowColor" format="reference|color" />
+        <attr name="rightImgZone1Visibility" />
+        <attr name="rightImgZone2Visibility" />
+        
+        <attr name="rightImgZone2ImageSrc" format="reference|color" />
+        <attr name="rightImgZone1ImageSrc" format="reference|color" />
+        
+        <!-- 标题对齐属性 -->
+        <attr name="titleAlignment" />
+    </declare-styleable>
+    
+    <attr name="title" format="string" />
+    <attr name="icon" format="reference" />
+</resources>

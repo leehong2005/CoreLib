@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PreferenceTheme">
+        <!-- Default style for PreferenceScreen. -->
+        <attr name="preferenceScreenStyle" format="reference" />
+        <!-- Default style for PreferenceCategory. -->
+        <attr name="preferenceCategoryStyle" format="reference" />
+        <!-- Default style for Preference. -->
+        <attr name="preferenceStyle" format="reference" />
+        <!-- Default style for informational Preference. -->
+        <attr name="preferenceInformationStyle" format="reference" />
+        <!-- Default style for CheckBoxPreference. -->
+        <attr name="checkBoxPreferenceStyle" format="reference" />
+        <!-- Default style for DialogPreference. -->
+        <attr name="dialogPreferenceStyle" format="reference" />
+        <!-- Default style for TextPreference. -->
+        <attr name="textPreferenceStyle" format="reference" />
+        <!-- Default style for SingleChoicePreference. -->
+        <attr name="singleChoicePreferenceStyle" format="reference" />
+        <!-- Default style for ButtonPreference. -->
+        <attr name="buttonPreferenceStyle" format="reference" />
+    </declare-styleable>
+
+    <!-- **************************************************************** -->
+    <!-- Preferences framework. -->
+    <!-- **************************************************************** -->
+
+    <!-- Base attributes available to PreferenceGroup. -->
+    <declare-styleable name="PreferenceGroup">
+        <!-- Whether to order the Preference under this group as they appear in the XML file.
+             If this is false, the ordering will follow the Preference order attribute and
+             default to alphabetic for those without the order attribute. -->
+        <attr name="orderingFromXml" format="boolean" />
+    </declare-styleable>
+
+    <!-- WARNING:  If adding attributes to Preference, make sure it does not conflict
+                   with a View's attributes.  Some subclasses (e.g., EditTextPreference)
+                   proxy all attributes to its EditText widget. -->
+
+    <!-- Base attributes available to Preference. -->
+    <declare-styleable name="Preference">
+        <!-- The optional icon for the preference -->
+        <attr name="icon" />
+        <!-- The key to store the Preference value. -->
+        <attr name="key" format="string" />
+        <!-- The title for the Preference in a PreferenceActivity screen. -->
+        <attr name="title" />
+        <!-- The sub-title for the Preference in a PreferenceActivity screen. -->
+        <attr name="subtitle" format="string" />
+        <!-- The summary for the Preference in a PreferenceActivity screen. -->
+        <attr name="summary" format="string" />
+        <!-- The tip text for the Preference in a PreferenceActivity screen. -->
+        <attr name="tipText" format="string" />
+        <!-- The tip new image for the Preference in a PreferenceActivity screen. -->
+        <attr name="tipImg" format="boolean"></attr>
+        <!-- The order for the Preference (lower values are to be ordered first). If this is not
+             specified, the default orderin will be alphabetic. -->
+        <attr name="order" format="integer" />
+        <!-- The layout for the Preference in a PreferenceActivity screen. This should
+             rarely need to be changed, look at widgetLayout instead. -->
+        <attr name="layout" format="reference" />
+        <!-- The layout for the controllable widget portion of a Preference. This is inflated
+             into the layout for a Preference and should be used more frequently than
+             the layout attribute. For example, a checkbox preference would specify
+             a custom layout (consisting of just the CheckBox) here. -->
+        <attr name="widgetLayout" format="reference" />
+        <!-- Whether the Preference is enabled. -->
+        <attr name="enabled" format="boolean" />
+        <!-- Whether the Preference is selectable. -->
+        <attr name="selectable" format="boolean" />
+        <!-- The key of another Preference that this Preference will depend on.  If the other
+             Preference is not set or is off, this Preference will be disabled. -->
+        <attr name="dependency" format="string" />
+        <!-- Whether the Preference stores its value to the shared preferences. -->
+        <attr name="persistent" format="boolean" />
+        <!-- The default value for the preference, which will be set either if persistence
+             is off or persistence is on and the preference is not found in the persistent
+             storage.  -->
+        <attr name="defaultValue" format="string|boolean|integer|reference|float" />
+        <!-- Whether the view of this Preference should be disabled when
+             this Preference is disabled. -->
+        <attr name="shouldDisableView" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base attributes available to CheckBoxPreference. -->
+    <declare-styleable name="CheckBoxPreference">
+        <!-- The summary for the Preference in a PreferenceActivity screen when the
+             CheckBoxPreference is checked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead. -->
+        <attr name="summaryOn" format="string" />
+        <!-- The summary for the Preference in a PreferenceActivity screen when the
+             CheckBoxPreference is unchecked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead. -->
+        <attr name="summaryOff" format="string" />
+        <!-- The state (true for on, or false for off) that causes dependents to be disabled. By default,
+             dependents will be disabled when this is unchecked, so the value of this preference is false. -->
+        <attr name="disableDependentsState" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base attributes available to DialogPreference. -->
+    <declare-styleable name="DialogPreference">
+        <!-- The title in the dialog. -->
+        <attr name="dialogTitle" format="string" />
+        <!-- The message in the dialog. If a dialogLayout is provided and contains
+             a TextView with ID android:id/message, this message will be placed in there. -->
+        <attr name="dialogMessage" format="string" />
+        <!-- The icon for the dialog. -->
+        <attr name="dialogIcon" format="reference" />
+        <!-- The positive button text for the dialog. Set to @null to hide the positive button. -->
+        <attr name="positiveButtonText" format="string" />
+        <!-- The negative button text for the dialog. Set to @null to hide the negative button. -->
+        <attr name="negativeButtonText" format="string" />
+        <!-- A layout to be used as the content View for the dialog. By default, this shouldn't
+             be needed. If a custom DialogPreference is required, this should be set. For example,
+             the EditTextPreference uses a layout with an EditText as this attribute. -->
+        <attr name="dialogLayout" format="reference" />
+    </declare-styleable>
+
+    <!-- The human-readable array to present as a list. Each entry must have a corresponding
+         index in entryValues. -->
+    <attr name="entries" format="reference" />
+    <!-- The array to find the value to save for a preference when an entry from
+         entries is selected. If a user clicks on the second item in entries, the
+         second item in this array will be saved to the preference. -->
+    <attr name="entryValues" format="reference" />
+
+    <!-- Base attributes available to ListPreference. -->
+    <declare-styleable name="ListPreference">
+        <attr name="entries" />
+        <attr name="entryValues" />
+    </declare-styleable>
+    
+    <!-- SingleChoicePreference attrs -->
+    <declare-styleable name="SingleChoicePreference">
+        <attr name="entries" />
+        <attr name="entryValues" />
+    </declare-styleable>
+</resources>

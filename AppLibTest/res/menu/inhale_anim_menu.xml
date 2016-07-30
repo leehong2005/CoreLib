@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/menu_inhale_down"
+        android:title="Inhale down"
+        android:orderInCategory="100"/>
+
+    <item android:id="@+id/menu_inhale_up"
+        android:title="Inhale up"
+        android:orderInCategory="100"/>
+    
+    <item android:id="@+id/menu_inhale_right"
+        android:title="Inhale right"
+        android:orderInCategory="100"/>
+
+    <item android:id="@+id/menu_inhale_left"
+        android:title="Inhale left"
+        android:orderInCategory="100"/>
+    
+</menu>

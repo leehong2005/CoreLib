@@ -1,0 +1,17 @@
+<resources>
+    
+    <style name="CustomActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:displayOptions">useLogo|showHome|homeAsUp</item>
+    </style>
+    
+    <!--     
+    <style name="AppTheme" parent="android:Theme.Holo.Light" >
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+     -->
+     
+    <style name="AppTheme" parent="android:Theme.Holo" >
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+</resources>

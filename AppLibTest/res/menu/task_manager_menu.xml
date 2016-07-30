@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/menu_enter_ip_host"
+        android:title="Input Host IP"
+        android:orderInCategory="100" android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_enable_romote_monitor"
+        android:title="Enable Romote Monitor"
+        android:orderInCategory="100" android:showAsAction="ifRoom"/>
+    
+</menu>

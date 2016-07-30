@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator" >
+    <!-- 在4.2上，若左移100%p会导致系统运行极度缓慢。故改成99% -->
+    <translate
+        android:duration="@integer/slide_anim_duration"
+        android:fromXDelta="0%p"
+        android:fromYDelta="0"
+        android:toXDelta="-99%p"
+        android:toYDelta="0" >
+    </translate>
+</set>

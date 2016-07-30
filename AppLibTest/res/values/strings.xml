@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CoreLibDemo</string>
+
+    <!-- Image cache -->
+    <string name="title_test_cache">Image Cache</string>
+    
+    <!-- Task manager -->
+    <string name="title_test_task">Task Manager</string>
+    <string name="title_task_show_dialog">01. Show Progress Dialog</string>
+    <string name="title_task_update_dialog">02. Update Progress Dialog</string>
+    <string name="title_task_interact_with_ui">03. Interact With UI</string>
+    <string name="title_task_interact_with_ui2">04. Interact With UI (Pause/Resume)</string>
+    <string name="title_task_task_manager_nested">05. Task Manager Nested</string>
+
+    <!-- Animation -->
+    <string name="title_animation">Animation</string>
+    <string name="title_anim_inhale">Inhale Animation</string>
+    <string name="title_anim_3d">3D Animation</string>
+    <string name="title_anim_cycle">Cycle Animation</string>
+    <string name="title_anim_bounce">Bounce Animation</string>
+    <string name="title_anim_flip">Flip Animation</string>
+    
+    <!-- Gallery -->
+    <string name="title_gallery">Gallery</string>
+    <string name="title_gallery_flow">Gallery Flow</string>
+    <string name="title_gallery_cycle">Gallery Cycle</string>
+    <string name="btn_done">OK</string>
+    <string name="btn_reset">Reset</string>
+    <string name="gallery_space_text">Space [-60, 60]</string>
+    <string name="gallery_space_text_hint">Gallery space value must be in the range [-60, 60].</string>
+    <string name="gallery_max_zoom_text">Max Zoom [-120, 120]</string>
+    <string name="gallery_max_zoom_text_hint">Gallery max zoom value must be in the range [-120, 120].</string>
+    <string name="gallery_max_rotate_angle_text">Max Rotation Angle [-60, 60]</string>
+    <string name="gallery_max_rotate_angle_text_hint">Gallery max rotation angle must be in the range [-60, 60].</string>
+    
+    <!-- Wheel View -->
+    <string name="title_wheel_view">Wheel View</string>
+    <string name="title_wheel_view_date">Date</string>
+    <string name="title_wheel_view_time">Time</string>
+    <string name="title_wheel_view_password">Password</string>
+    <string name="title_wheel_view_horizontal">Horizontal</string>
+    
+    <!-- Group view -->
+    <string name="title_group_grid_view">Group</string>
+    
+    <!-- Drag drop -->
+    <string name="title_drag_drop">Drag Drop</string>
+    <string name="title_drag_drop_gridview">Grid View</string>
+    <string name="title_drag_drop_gridview2">Grid View2</string>
+    <string name="title_drag_drop_listview">List View</string>
+    
+    <string name="title_capture">Clip Bitmap</string>
+    
+    <!-- Scroll Bar -->
+    <string name="title_scrollbar">Scroll Bar</string>
+    <string name="title_scrollbar_scrollview">ScrollView</string>
+    <string name="title_scrollbar_listview">ListView</string>
+    
+    <!-- Staggered view -->
+    <string name="title_scrollbar_staggered_gridview">Staggered GridView</string>
+    
+    <!-- Pull to refresh -->
+    <string name="title_pull_to_refresh">Pull To Refresh</string>
+    <string name="title_pull_to_refresh_listview">ListView</string>
+    <string name="title_pull_to_refresh_webview">WebView</string>
+    <string name="title_pull_to_refresh_scrollview">Scroll View</string>
+    
+    <!-- Staggered -->
+    <string name="title_staggered_picture_listview">Staggered Pictures</string>
+    
+    <!-- Section ListView -->
+    <string name="title_section_listview">Section ListView</string>
+    
+    <!-- ViewPager -->
+    <string name="title_view_pager">View Pager</string>
+    <string name="title_image_viewer">Image Viewer</string>
+    <string name="title_staggered_images">Staggered Image</string>
+</resources>

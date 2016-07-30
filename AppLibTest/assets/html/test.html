@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+function toclient()
+{
+    var order=$("#val").val();
+window.demo.clickonAndroid(order);
+   
+    }
+   
+    function wave(str){
+       //alert(str.name);
+       $("#fromclient").text(str.name);
+    }
+</script>
+</head>
+    <body>这是一个html页面
+    <br/>
+ 输入一个字符串：<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <input id="val" />
+        <input type="submit" value="点击提交给客户端"
+        onclick="toclient();"/>
+      <br /> 
+        显示返回：<label id="fromclient"></label>
+    </body>
+</html>
